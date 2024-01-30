@@ -1,0 +1,242 @@
+ Reset default margin and padding */
+body, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center; /* Center the buttons */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 60px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 5px;
+    width: 0; /* Initially set width to 0 */
+    height: 2px; /* Set the line thickness */
+    background-color: #fff;
+    transition: width 0.3s; /* Add transition effect for width */
+}
+
+nav ul li a:hover::after {
+    width: 50%; /* Make the line full width on hover */
+}
+
+nav ul li a:hover {
+    background-color:#1a1a1a;
+}
+
+.headerElement {
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.active {
+    background-color:#1a1a1a;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 50%; /* Position relative to the parent */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e1e1e1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.banner {
+    background-color: #ddd;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact {
+    background-color: #eee;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    margin: 0 20px; /* Add 20px margin to the left and right of each button */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+.contact-buttons a:hover {
+    background-color: #555; /* Change button color on hover */
+}
+
+.about {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.projects {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.project-container {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    height: 800px;
+    /*gap: 20px;*/
+}
+
+.project {
+    background-color: #ddd;
+    height: 100%;
+    text-align: center;
+    transition: opacity 0.5s;
+    color: white;
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+}
+
+a{
+    text-decoration: none;
+}
+
+.project:hover {
+    opacity: 0.75;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.BB {
+    background-image: url('Images/BrazenBullMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.UPUC {
+    background-image: url('Images/UPUCMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.DT {
+    background-image: url('Images/DTMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.WB {
+    background-image: url('Images/WBMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/*.MM {
+    background-image: url('Images/MMMain.png');
+    background-size: cover;
+    background-position: center;
+}*/
+
+/*.GG {
+    background-image: url('Images/GGMain.png');
+    background-size: cover;
+    background-position: center;
+}
+*/
+.DB {
+    background-image: url('Images/DBMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.OG {
+    background-image: url('Images/OGMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.PLS {
+    background-image: url('Images/PLSMain.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1a1a;
+
+}
+
+.FE {
+    background-image: url('Images/FEMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.BG {
+    background-image: url('Images/BGMain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/*.ST {
+    background-image: url('Images/STMain.png');
+    background-size: cover;
+    background-position: center;
+}*/
